@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
-const indexRouter = require("./routes/index");
+const postRouter = require("./routes/posts");
 
-app.use("/", indexRouter);
+app.use("/", postRouter);
 
 app.listen(process.env.PORT || 3000, () => console.log("server on"));
